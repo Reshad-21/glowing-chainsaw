@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Московская погода</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div id="app">
+    <div id="login-page" class="page">
+      <h1>Вход</h1>
+      <form id="login-form">
+        <input type="email" id="email" placeholder="Email" required>
+        <input type="password" id="password" placeholder="Пароль" required>
+        <button type="submit">Войти</button>
+      </form>
+    </div>
+    
+    <div id="weather-page" class="page hidden">
+      <h1>Погода в Москве</h1>
+      <div id="weather-data">
+        <div class="weather-card">
+          <img id="weather-icon" src="" alt="Weather icon">
+          <div id="temperature"></div>
+          <div id="weather-description"></div>
+          <div id="wind-speed"></div>
+        </div>
+      </div>
+      <button id="logout-btn">Выйти</button>
+    </div>
+  </div>
+  <script src="app.js"></script>
+</body>
+</html>
