@@ -1,0 +1,12 @@
+document.addEventListener('DOMContentLoaded', () => {
+  const loginPage = document.getElementById('login-page');
+  const weatherPage = document.getElementById('weather-page');
+  const loginForm = document.getElementById('login-form');
+  const logoutBtn = document.getElementById('logout-btn');
+  
+  // Проверяем авторизацию при загрузке
+  if (localStorage.getItem('authToken')) {
+    showWeatherPage();
+    loadWeatherData();
+  } else {
+   
